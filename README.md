@@ -34,7 +34,7 @@ Once connected to the server, use the following commands
         - add 'input_word'              # Adds a word to the Trie
         - remove 'input_word'           # Removes a word from the Trie
         - exists 'input_word'           # Checks if word is in the Trie
-        - autocomplete 'input_word'     # Returns words in the Trie that start with a prefix
+        - autocomplete 'input_prefix'     # Returns words in the Trie that start with a prefix
         - print                         # Prints out the Trie
         - save                          # Saves the data in the Trie for future use
         - disconnect                    # Disconnects the client from the server
