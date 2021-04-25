@@ -94,6 +94,15 @@ print('\n\n------EDGE CASE TESTS------')
 for test in edge_case_tests:
     send_msg(client1, test)
 
+print('\n\n------CONNECT TO WRONG CLIENT TEST------')
+
+client_wrong = socket.socket()
+client_wrong.settimeout(5)
+try:
+    client_wrong.connect(('9.9.9.9', 9999))
+except socket.timeout:
+    print("Timed Out.... Expected")
+
 print('\n\n------TWO CLIENTS TESTS------')
 
 
