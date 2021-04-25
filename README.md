@@ -29,7 +29,7 @@ To start the client as a CLI, you must specify the server's IP and PORT it provi
 $ globaltrie --ip IP --port PORT  # Replace IP and PORT with your server's ip and port.
 ```
 Once connected to the server, use the following commands
-```
+```sh
 [Client] Available Commands:
         - add 'input_word'              # Adds a word to the Trie
         - remove 'input_word'           # Removes a word from the Trie
