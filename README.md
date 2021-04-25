@@ -1,4 +1,5 @@
 # Global-Trie
+This project lets a server host a Trie, which can then be accessed and manipulated by multiple clients concurrently.
 
 This project is divided into two sections. The Trie Server itself, and the program for clients to connect with the server.
 
@@ -60,6 +61,20 @@ client.save()                                    # Saves the data in the Trie fo
 # When you are done using the Trie, make sure to disconnect.
 client.disconnect()
 ```
+
+##Testing installation
+To make sure the server and client was set up properly, download the **tester.py** file.
+```sh
+$ curl https://raw.githubusercontent.com/dajkatal/Global-Trie/master/tester.py > tester.py
+```
+Inside the file, specifically [lines 3 and 4](https://github.com/dajkatal/Global-Trie/blob/a07569158ab700d24ec51feab17a408d504ae3f7/tester.py#L3), change the IP and PORT to the ones provided by the Trie server.
+
+Then, run the file
+```sh
+$ python tester.py
+```
+
+If no errors were thrown, everything was set up properly and you can start using the Trie Server.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
