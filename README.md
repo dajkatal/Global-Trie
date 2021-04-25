@@ -62,7 +62,7 @@ client.save()                                    # Saves the data in the Trie fo
 client.disconnect()
 ```
 
-##Testing installation
+## Testing installation
 To make sure the server and client was set up properly, download the **tester.py** file.
 ```sh
 $ curl https://raw.githubusercontent.com/dajkatal/Global-Trie/master/tester.py > tester.py
