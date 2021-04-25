@@ -67,7 +67,7 @@ To make sure the server and client was set up properly, download the **tester.py
 ```sh
 $ curl https://raw.githubusercontent.com/dajkatal/Global-Trie/master/tester.py > tester.py
 ```
-Inside the file, specifically [lines 3 and 4](https://github.com/dajkatal/Global-Trie/blob/a07569158ab700d24ec51feab17a408d504ae3f7/tester.py#L3), change the IP and PORT to the ones provided by the Trie server.
+Inside the file, specifically [lines 3 and 4](https://github.com/dajkatal/Global-Trie/blob/a07569158ab700d24ec51feab17a408d504ae3f7/tester.py#L3#L4), change the IP and PORT to the ones provided by the Trie server.
 
 Then, run the file
 ```sh
