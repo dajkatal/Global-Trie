@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='globaltrie-server',
-    version='1.0.5',
+    version='1.0.7',
     author="dajkatal",
     author_email="<dajkatal@gmail.com>",
     description="CLI to host Trie Server",

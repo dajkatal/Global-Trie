@@ -25,11 +25,17 @@ def main():
     disconnect_message = 'disconnect'
     # Name of file storing trie.
     file_name = 'trie_dump'
+    file_path = f"{os.path.expanduser('~')}/trieserver-data"
+    file_location = f"{file_path}/{file_name}"
+
+    # Check if directory where Trie is stored exists (Usually only when program is run for first time)
+    if not os.path.isdir(file_path):
+        os.makedirs(file_path)
 
     # Load Trie
     trie = None
-    if os.path.isfile(f'{os.path.dirname(os.path.realpath("server_cli.py"))}/{file_name}'):
-        with open(file_name, 'rb') as dill_file:
+    if os.path.isfile(file_location):
+        with open(file_location, 'rb') as dill_file:
             trie = dill.load(dill_file)
         print("Loaded saved Trie")
     else:
@@ -49,7 +55,7 @@ def main():
 
     def save_trie():
         # If save command is run, the Trie is saved to a file.
-        with open(f'{os.path.dirname(os.path.realpath("server_cli.py"))}/{file_name}', "wb") as dill_file:
+        with open(file_location, "wb") as dill_file:
             dill.dump(trie, dill_file)
 
 
